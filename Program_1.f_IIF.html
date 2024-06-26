@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task June 21</title>
+</head>
+
+<body>
+    <h3>Welcome</h3>
+    <script>
+        //Program 1.h (IIFE method)
+        let arr1 = [1, 5, 9, 12, 15]
+        let arr2 = [3, 4, 7, 10, 11]
+
+        let n = arr1.length;
+        let i = 0;
+            let j = 0;
+            let value1 = 0;
+            let value2 = 0;
+
+        (function () {
+
+            for (let count = 0; count <= n; count++) {
+
+                if (arr1[i] < arr2[j]) {
+                    value1 = arr1[i];
+                    i++;
+                }
+                else if (arr1[i] > arr2[j]) {
+                    value2 = arr2[j];
+                    j++;
+                }
+                else if (arr1[i] === arr2[j]) {
+                    value1 = arr1[i];
+                    i++;
+                }
+            }
+            var store= (value1 + value2) / 2;
+            if (arr1.length === arr2.length) {
+                console.log('Median for both array is', store)
+            }
+            else {
+                console.log('Array sizes are not equal')
+            }
+        })(arr1, arr2, n)
+
+
+
+
+    </script>
+</body>
+
+</html>

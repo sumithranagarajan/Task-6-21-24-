@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task June 21</title>
+</head>
+<body>
+    <h3>Welcome</h3>
+    <script>
+        //Program 1.c (IIFE method) 
+        (function(str) {
+            var splitstr = str.toLowerCase().split(' ');
+            for (var i = 0; i < splitstr.length; i++) {
+                splitstr[i] = splitstr[i].charAt(0).toUpperCase() + splitstr[i].slice(1);
+            }
+            console.log(splitstr.join(' '));
+        })("welcome to zen portal")
+    </script>
+</body>
+</html>

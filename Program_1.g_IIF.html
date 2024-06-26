@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task June 21</title>
+</head>
+<body>
+    <h3>Welcome</h3>
+    <script>
+        //Program 1.g (IIFE method)
+       
+        let arr = ['abc','ada', 'car', 'ada','abc'];
+        (function () {
+            arr.map((val, i) => {
+                if (arr.indexOf(val) != i) {
+                    arr.splice(i)
+                }
+            }
+        )
+        console.log(arr);
+        })(arr)
+    </script>
+</body>
+</html>

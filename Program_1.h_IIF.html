@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task June 21</title>
+</head>
+
+<body>
+    <h3>Welcome</h3>
+    <script>
+        //Program 1.h (IIFE method)
+        var arr = [1, 2, 3, 4, 5];
+        var k = 5;
+        var count = 1;
+        (function () {
+            for (var i = 0; i < k; i++) {
+                arr = [...arr.slice(count, arr.length), ...arr.slice(0, count)];
+                console.log(arr, i);
+            }
+        })(arr, count)
+
+
+    </script>
+</body>
+
+</html>

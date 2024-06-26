@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task June 21</title>
+</head>
+<body>
+    <h3>Welcome</h3>
+    <script>
+        //Program 2.b (Arrow function method)
+        var titleCaps=(str)=> {
+            var splitstr = str.toLowerCase().split(' ');
+            for (var i = 0; i < splitstr.length; i++) {
+                splitstr[i] = splitstr[i].charAt(0).toUpperCase() + splitstr[i].slice(1);
+            }
+            return splitstr.join(' ');
+        }
+        var result = titleCaps("welcome to zen portal");
+        console.log(result);
+        
+    </script>
+</body>
+</html>

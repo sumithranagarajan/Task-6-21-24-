@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task June 21</title>
+</head>
+
+<body>
+    <h3>Welcome</h3>
+    <script>
+        //Program 1.d (IIFE method)
+
+        (function(numberArray) {
+                numberArray = numberArray.filter((number) => {
+                    for (var i = 2; i <= Math.sqrt(number); i++) {
+                        if (number % i === 0) 
+                        return false;
+                    }
+                    return true;
+                });
+                console.log(numberArray);
+            })([1, 2, 3, 4, 8, 7])
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task June 21</title>
+</head>
+<body>
+    <h3>Welcome</h3>
+    <script>
+        //Program 1.a (IIFE method)
+        var arr2=[];
+        var arr1=[4,5,2,8,9,1];
+        (function (val1){
+            for(var i=0;i<val1.length;i++){
+                if(val1[i]%2!=0){
+                    arr2.push(val1[i]);
+                }
+            }
+            console.log(arr2);
+
+        })(arr1)
+    </script>
+</body>
+</html>
